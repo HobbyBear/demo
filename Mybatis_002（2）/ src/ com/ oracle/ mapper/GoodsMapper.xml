@@ -21,6 +21,29 @@
 		</association>
 	</resultMap>
 	
+	
+	<!-- 添加id主键的方式 -->
+	<!-- <insert id="insertUser" parameterType="cn.atcast.pojo.User">
+		<selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+			select
+			LAST_INSERT_ID()
+		</selectKey>
+		insert into user (username,birthday,sex,address)
+		values(#{username},#{birthday},#{sex},#{address})
+	</insert> -->
+	
+	
+	<!-- 添加uuid主键的方式 -->
+	<!-- <insert id="insertUser" parameterType="cn.atcast.pojo.User">
+		<selectKey resultType="java.lang.String" order="BEFORE"
+			keyProperty="id">
+			select uuid()
+		</selectKey>
+		insert into user(id,username,birthday,sex,address)
+		values(#{id},#{username},#{birthday},#{sex},#{address})
+	</insert> -->
+	
+	
 	<select id="findAll"  resultMap="baseResult">
 		select * from goods 
 	</select>
