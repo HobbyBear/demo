@@ -1,0 +1,5 @@
+0:0:0:0:0:0:0:1 - - [12/Nov/2018:17:19:07 +0800] "GET / HTTP/1.1" 302 - http-bio-8080-exec-1 59
+0:0:0:0:0:0:0:1 - - [12/Nov/2018:17:19:10 +0800] "GET /toGoodsList HTTP/1.1" 200 4659 http-bio-8080-exec-3 2540
+0:0:0:0:0:0:0:1 - - [12/Nov/2018:17:19:10 +0800] "GET /resources/js/jquery.min.js HTTP/1.1" 200 92633 http-bio-8080-exec-4 13
+0:0:0:0:0:0:0:1 - - [12/Nov/2018:17:19:23 +0800] "GET /toCart HTTP/1.1" 200 300 http-bio-8080-exec-5 142
+0:0:0:0:0:0:0:1 - - [12/Nov/2018:17:19:25 +0800] "GET /addCart?goodsId=1 HTTP/1.1" 200 11 http-bio-8080-exec-7 94
